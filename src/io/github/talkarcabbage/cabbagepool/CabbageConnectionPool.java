@@ -165,7 +165,7 @@ public class CabbageConnectionPool {
 		 * @throws SQLException 
 		 */
 		private Connection refreshConnection() throws SQLException {
-			return DriverManager.getConnection(protocol);
+			return createNewConnection();
 		}
 		
 		/**
